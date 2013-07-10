@@ -1,0 +1,423 @@
+@charset "utf-8";
+/* yolo.scss
+    https://github.com/BB9z/yolo.scss
+    Alpha
+*/
+body {
+  font-family: Hiragino Sans GB, WenQuanYi Micro Hei, Helvetica, Lucida, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 16px;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  body {
+    font-size: 26px;
+  }
+}
+
+textarea {
+  font-family: "XHei Mono", "Courier New", Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+  color: #0080FF;
+}
+a:visited {
+  color: #275186;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover {
+  color: #3AF;
+  text-decoration: underline;
+  outline: 0;
+}
+a:active {
+  color: #6CF;
+  outline: 0;
+}
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, p, blockquote, th, td, hr, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+iframe {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+html {
+  background: transparent;
+  color: #333;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.yolo ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+.yolo ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+.yolo li ul, .yolo li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2em;
+}
+.yolo li ul {
+  list-style: circle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  text-align: inherit;
+}
+
+caption, th {
+  text-align: left;
+  font-style: normal;
+}
+
+.yolo table {
+  background: #FFF;
+}
+.yolo table th, .yolo table td {
+  border: 1px solid #ddd;
+  padding: .357em .714em;
+}
+.yolo table th {
+  background: #fbfbfb;
+}
+.yolo table thead th {
+  background: #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.yolo h1, .yolo h2, .yolo h3, .yolo h4, .yolo h5, .yolo h6 {
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+}
+.yolo h1 {
+  font-size: 2em;
+}
+.yolo h2 {
+  font-size: 1.8em;
+}
+.yolo h3 {
+  font-size: 1.6em;
+}
+.yolo h4 {
+  font-size: 1.4em;
+}
+.yolo h5,
+.yolo h6 {
+  font-size: 1.2em;
+}
+.yolo p, .yolo pre, .yolo ul, .yolo ol, .yolo dl, .yolo form, .yolo hr, .yolo table {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  margin: 1em 2em 1em 1em;
+  padding: .6em 1em;
+  background: #f1f1f1;
+}
+blockquote blockquote {
+  padding: .2em 0 .2em 1em;
+  margin: .7em 1em .2em 0.2em;
+  border-left: 0.4em solid #ddd;
+}
+
+kbd, samp {
+  font-family: "XHei Mono", "Courier New", Courier, monospace;
+  font-size: 1em;
+}
+
+pre, code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.2;
+  font-size: .8em;
+  font-family: "XHei Mono", "Courier New", Courier, monospace;
+}
+
+pre {
+  border: 1px solid #ddd;
+  border-left-width: 0.4em;
+  background: #fbfbfb;
+  padding: .714em;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+acronym, abbr[title] {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+
+abbr[title] {
+  cursor: help;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+i, cite, em, var, address, dfn {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.typo em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+ins {
+  text-decoration: none;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+u {
+  text-decoration: underline;
+}
+
+mark {
+  background: #fffdd1;
+  color: black;
+}
+
+small {
+  font-size: .8em;
+  color: #888;
+}
+
+.yolo table, .yolo pre {
+  display: block;
+  overflow-x: auto;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button, input, select {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  margin: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.no_link_status a:hover {
+  text-decoration: none;
+}
+
+@media print {
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
