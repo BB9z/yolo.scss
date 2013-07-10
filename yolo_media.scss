@@ -1,0 +1,41 @@
+
+img {
+    // Remove border when inside `a` element in IE 8/9.
+    border: 0;
+
+    // 限制图像尺寸
+    max-width: 100%;
+
+    // IE7-8 need help adjusting responsive images
+    width: auto\9;
+    height: auto;
+
+    vertical-align: middle;
+
+    // 优化图像在 IE6-7 的抗锯齿处理
+    -ms-interpolation-mode: bicubic;
+}
+
+// HTML5 媒体文件跟 img 保持一致，IE8/9
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+// Prevent modern browsers from displaying audio without controls.
+// Remove excess height in iOS 5 devices.
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+// Correct overflow displayed oddly in IE 9.
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figcaption {
+    font-size: .8em;
+    color: #888;
+}

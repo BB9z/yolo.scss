@@ -229,3 +229,10 @@ small {
 	font-size: .8em;
 	color: #888;
 }
+
+// Custom user selection
+::-moz-selection,
+::selection {
+    background:rgba(0, 136, 204, .5);
+    color:#fff;
+}

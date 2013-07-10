@@ -101,6 +101,11 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+figcaption {
+  font-size: .8em;
+  color: #888;
+}
+
 html {
   background: transparent;
   color: #333;
@@ -283,6 +288,12 @@ mark {
 small {
   font-size: .8em;
   color: #888;
+}
+
+::-moz-selection,
+::selection {
+  background: rgba(0, 136, 204, 0.5);
+  color: #fff;
 }
 
 .yolo table, .yolo pre {
