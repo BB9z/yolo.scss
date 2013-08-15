@@ -62,28 +62,40 @@ body {
 }
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 18px;
+    font-size: 112.5%;
   }
 }
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 20px;
+    font-size: 125%;
   }
 }
 @media screen and (min-width: 1400px) {
   body {
-    font-size: 22px;
+    font-size: 137.5%;
   }
 }
 @media screen and (min-width: 1600px) {
   body {
-    font-size: 24px;
+    font-size: 150%;
   }
 }
 @media screen and (min-width: 1800px) {
   body {
-    font-size: 26px;
+    font-size: 162.5%;
   }
+}
+
+body,
+div,
+p,
+a,
+li,
+td,
+small {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }
 
 textarea {
