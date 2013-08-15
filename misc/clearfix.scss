@@ -1,3 +1,5 @@
+// yolo.scss
+// misc/clearfix
 
 .clearfix {
     zoom: 1;
@@ -10,9 +12,4 @@
     &:after {
         clear: both;
     }
-}
-
-// 区域内的链接没有过多状态，典型场景如：导航
-.no_link_status a:hover {
-    text-decoration: none;
 }

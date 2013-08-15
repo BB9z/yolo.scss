@@ -1,0 +1,31 @@
+
+// @List
+ul, ol {
+	// 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去
+	list-style: none;
+}
+
+.yolo {
+    // Restore ul, ol style in article.
+    ul {
+        margin-left: 1.3em;
+        list-style: disc;
+    }
+    
+    ol {
+        list-style: decimal;
+        margin-left: 1.9em;
+    }
+    
+    li {
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 2em;
+        }
+
+        ul {
+            list-style: circle;
+        }
+    }
+}

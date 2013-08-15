@@ -1,0 +1,34 @@
+// yolo.scss
+// table
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// IE bug fixed: th 不继承 text-align
+th {
+    text-align: inherit;
+}
+
+caption, th {
+    text-align: left;
+    font-style: normal;
+}
+
+.yolo table {
+    background: #FFF;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: .357em .714em;
+    }
+
+    th {
+        background: #fbfbfb;
+    }
+
+    thead th {
+        background: #f1f1f1;
+    }
+}

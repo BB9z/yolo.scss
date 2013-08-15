@@ -3,6 +3,57 @@
     https://github.com/BB9z/yolo.scss
     Alpha
 */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, p, blockquote, th, td, hr, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+iframe {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+.yolo table, .yolo pre {
+  display: block;
+  overflow-x: auto;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figcaption {
+  font-size: .8em;
+  color: #888;
+}
+
 body {
   font-family: Hiragino Sans GB, WenQuanYi Micro Hei, Helvetica, Lucida, Verdana, sans-serif;
   font-weight: 400;
@@ -60,55 +111,8 @@ a:active {
   outline: 0;
 }
 
-body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, p, blockquote, th, td, hr, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  margin: 0;
-  padding: 0;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-iframe {
-  display: block;
-}
-
-[hidden] {
-  display: none;
-}
-
-img {
-  border: 0;
-  max-width: 100%;
-  width: auto\9;
-  height: auto;
-  vertical-align: middle;
-  -ms-interpolation-mode: bicubic;
-}
-
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-figcaption {
-  font-size: .8em;
-  color: #888;
-}
-
-html {
-  background: transparent;
-  color: #333;
+.no_link_status a:hover {
+  text-decoration: none;
 }
 
 ul, ol {
@@ -158,6 +162,11 @@ caption, th {
 }
 .yolo table thead th {
   background: #f1f1f1;
+}
+
+html {
+  background: transparent;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -296,11 +305,6 @@ small {
   color: #fff;
 }
 
-.yolo table, .yolo pre {
-  display: block;
-  overflow-x: auto;
-}
-
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -376,10 +380,6 @@ textarea {
 }
 .clearfix:after {
   clear: both;
-}
-
-.no_link_status a:hover {
-  text-decoration: none;
 }
 
 @media print {

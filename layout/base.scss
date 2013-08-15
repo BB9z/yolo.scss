@@ -4,17 +4,3 @@ body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, p, blockq
     margin: 0;
     padding: 0;
 }
-
-// IE8/9 HTML5 标签重设
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-    display: block;
-}
-// IE6 7 8(q) 显示为inline
-iframe {
-    display: block;
-}
-
-// Address styling not present in IE 8/9.
-[hidden] {
-    display: none;
-}
