@@ -133,7 +133,7 @@ blockquote {
 // 代码片断
 // Correct font family set oddly in Safari 5 and Chrome.
 kbd, samp {
-    font-family: $fontCode;
+    font-family: $YLFontFamilyMono;
     font-size: 1em;
 }
 pre, code {
@@ -142,7 +142,7 @@ pre, code {
     
     line-height: 1.2;
     font-size: .8em;
-    font-family: $fontCode;
+    font-family: $YLFontFamilyMono;
 }
 pre {
     border: 1px solid #ddd;

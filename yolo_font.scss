@@ -1,9 +1,7 @@
 
-$fontNormal : Hiragino Sans GB, WenQuanYi Micro Hei, Helvetica, Lucida, Verdana, sans-serif;
-$fontCode : "XHei Mono", "Courier New", Courier, monospace;
 
-body {    
-	font-family: $fontNormal;
+body {
+	font-family: $YLFontFamilyNormal;
 	font-weight: 400;
 	line-height: 1.8;
 
@@ -42,5 +40,5 @@ div, p, a, li, td, small {
 
 textarea {
 	// 使用等宽字体
-	font-family: $fontCode;
+	font-family: $YLFontFamilyMono;
 }
