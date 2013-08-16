@@ -6,6 +6,8 @@
 
 @import "config";
 
+@import "misc/clearfix";
+
 @import "layout/base";
 @import "layout/ie-fix";
 @import "layout/content_crop";
@@ -19,7 +21,5 @@
 @import "typo/main";
 
 @import "form/form";
-
-@import "misc/clearfix";
 
 @import "typo/print";
