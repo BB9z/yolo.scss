@@ -12,12 +12,11 @@ $YLDebugMode: false !default;
 @import "config";
 
 @import "layout/base";
-@import "layout/ie-fix";
+@import "layout/ie_fix";
 @import "layout/content_crop";
 @import "layout/media";
 
 @import "grid/grid_core";
-@import "grid/1080-12col-fix";
 
 @import "typo/font";
 @import "typo/link";

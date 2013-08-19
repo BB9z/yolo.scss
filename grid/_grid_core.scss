@@ -1,0 +1,14 @@
+$YLEnableGridSystem: true;
+
+
+$YLGridSystemGutterWidth: 10px !default;
+
+$YLGridSystemColumnCount: 12 !default;
+$YLGridSystemColumnWidth: 70px !default;
+
+@debug $YLGridSystemWidth;
+
+
+
+@import "1080_12col_fix";
+
