@@ -7,4 +7,15 @@ $YLFontSizeDefault: 16px;
 // Disable text adjust on iOS, Android, WP
 $YLTextSizeAdjustDiabled: true;
 
-$YLEnableResponsiveTextAdjust: true;
+$YLEnableResponsiveTextAdjust: false;
+
+
+// Grid system
+$YLGridSystemColNumber: 12;
+
+// auto, 1080px or 960px
+$YLGridSystemWidth: 1080px;
+
+
+
+
