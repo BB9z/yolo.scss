@@ -1,12 +1,15 @@
-/*! yolo.scss
-    https://github.com/BB9z/yolo.scss
-    Alpha
-*/
 @charset "utf-8";
 
-@import "config";
+/*! yolo.scss
+    https://github.com/BB9z/yolo.scss
+    Alpha v 0.0.0
+*/
 
-@import "misc/clearfix";
+@import "lib/clearfix";
+
+$YLDebugMode: false !default;
+
+@import "config";
 
 @import "layout/base";
 @import "layout/ie-fix";
