@@ -85,54 +85,175 @@ figcaption {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
   position: relative;
+  box-sizing: border-box;
   float: left;
   min-height: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .col-1 {
-  width: 70px;
+  width: 90px;
 }
 
 .col-2 {
-  width: 150px;
+  width: 180px;
 }
 
 .col-3 {
-  width: 230px;
+  width: 270px;
 }
 
 .col-4 {
-  width: 310px;
+  width: 360px;
 }
 
 .col-5 {
-  width: 390px;
+  width: 450px;
 }
 
 .col-6 {
-  width: 470px;
+  width: 540px;
 }
 
 .col-7 {
-  width: 550px;
-}
-
-.col-8 {
   width: 630px;
 }
 
+.col-8 {
+  width: 720px;
+}
+
 .col-9 {
-  width: 710px;
+  width: 810px;
 }
 
 .col-10 {
-  width: 790px;
+  width: 900px;
 }
 
 .col-11 {
-  width: 870px;
+  width: 990px;
+}
+
+.col-push-1 {
+  left: 90px;
+}
+
+.col-pull-1 {
+  right: 90px;
+}
+
+.col-offset-1 {
+  margin-left: 90px;
+}
+
+.col-push-2 {
+  left: 180px;
+}
+
+.col-pull-2 {
+  right: 180px;
+}
+
+.col-offset-2 {
+  margin-left: 180px;
+}
+
+.col-push-3 {
+  left: 270px;
+}
+
+.col-pull-3 {
+  right: 270px;
+}
+
+.col-offset-3 {
+  margin-left: 270px;
+}
+
+.col-push-4 {
+  left: 360px;
+}
+
+.col-pull-4 {
+  right: 360px;
+}
+
+.col-offset-4 {
+  margin-left: 360px;
+}
+
+.col-push-5 {
+  left: 450px;
+}
+
+.col-pull-5 {
+  right: 450px;
+}
+
+.col-offset-5 {
+  margin-left: 450px;
+}
+
+.col-push-6 {
+  left: 540px;
+}
+
+.col-pull-6 {
+  right: 540px;
+}
+
+.col-offset-6 {
+  margin-left: 540px;
+}
+
+.col-push-7 {
+  left: 630px;
+}
+
+.col-pull-7 {
+  right: 630px;
+}
+
+.col-offset-7 {
+  margin-left: 630px;
+}
+
+.col-push-8 {
+  left: 720px;
+}
+
+.col-pull-8 {
+  right: 720px;
+}
+
+.col-offset-8 {
+  margin-left: 720px;
+}
+
+.col-push-9 {
+  left: 810px;
+}
+
+.col-pull-9 {
+  right: 810px;
+}
+
+.col-offset-9 {
+  margin-left: 810px;
+}
+
+.col-push-10 {
+  left: 900px;
+}
+
+.col-pull-10 {
+  right: 900px;
+}
+
+.col-offset-10 {
+  margin-left: 900px;
 }
 
 body {

@@ -1,14 +1,86 @@
-$YLEnableGridSystem: true;
+$YLEnableGridSystem: true !default;
 
-
-$YLGridSystemGutterWidth: 10px !default;
-
+$YLGridSystemWidth: auto !default;
 $YLGridSystemColumnCount: 12 !default;
-$YLGridSystemColumnWidth: 70px !default;
 
+$YLGridSystemGutterWidth: 0 !default;
+$YLGridSystemColumnWidth: 0;
+
+$DD: false;
+
+@if $YLGridSystemWidth == auto {
+    $DD: "动态布局";
+    @if $YLGridSystemGutterWidth != 0 {
+        @warn "Gutter Width will be ignorled in flexible mode";
+        $YLGridSystemGutterWidth: 0;
+    }
+    $YLGridSystemColumnWidth: 100% / $YLGridSystemColNumber;
+}
+@else {
+    $DD: "固定布局";
+    $YLGridSystemColumnWidth: $YLGridSystemWidth / $YLGridSystemColNumber;
+}
+
+@debug $DD;
+@debug $YLGridSystemColumnWidth;
 @debug $YLGridSystemWidth;
 
+@if $YLEnableGridSystem {
+    
+    // Set the container width, and override it for fixed navbars in media queries
+    .container {
+        @include clearfix();
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        @if $YLGridSystemWidth != auto {
+            width: $YLGridSystemWidth;
+        }
+    }
 
+    .row {
+        @include clearfix();
+    }
 
-@import "1080_12col_fix";
+    %YLGrideSystemColumnLayout {
+        position: relative;
+        box-sizing: border-box;
+        float: left;
+    
+        // Prevent columns from collapsing when empty
+        min-height: 1px;
+        // Inner gutter via padding
+        padding-left:  ($YLGridSystemGutterWidth / 2);
+        padding-right: ($YLGridSystemGutterWidth / 2);
+    }
+
+    @for $i from 1 to $YLGridSystemColumnCount {
+        .col-#{$i} {
+            @extend %YLGrideSystemColumnLayout;
+        }
+    }
+
+    @for $i from 1 to $YLGridSystemColumnCount {
+        .col-#{$i} {
+            width: $YLGridSystemColumnWidth * $i;
+        }
+    }
+
+    @for $i from 1 to $YLGridSystemColumnCount - 1 {
+        // Push and pull columns
+        .col-push-#{$i} {
+            left: $YLGridSystemColumnWidth * $i;
+        }
+    
+        .col-pull-#{$i} {
+            right: $YLGridSystemColumnWidth * $i;
+        }
+    
+        // Offsets
+        .col-offset-#{$i} {
+            margin-left: $YLGridSystemColumnWidth * $i;
+        }
+    }
+}
 
