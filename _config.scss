@@ -1,14 +1,13 @@
 
-// font
+// Font
 $YLFontFamilyNormal: Hiragino Sans GB, WenQuanYi Micro Hei, Helvetica, Lucida, Verdana, sans-serif;
 $YLFontFamilyMono: "XHei Mono", "Courier New", Courier, monospace;
 $YLFontSizeDefault: 16px;
 
-// Disable text adjust on iOS, Android, WP
+// Disable text adjust on iOS, Android, WP.
 $YLTextSizeAdjustDiabled: true;
 
 $YLEnableResponsiveTextAdjust: false;
-
 
 
 // Grid system
@@ -32,3 +31,7 @@ $YLGridSystemGutterWidth: 20px;
 // $YLGridSystemWidth: 960px;
 // $YLGridSystemColNumber: 12;
 // $YLGridSystemGutterWidth: 20px;
+
+
+// Enable debug outputs when compiling.
+$YLDebugMode: true;
