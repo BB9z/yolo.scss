@@ -7,53 +7,54 @@
             yolo.scss grid system test
         </title>
         <link href="../yolo.css" rel="stylesheet" type="text/css">
+        <link href="../misc/debug_classid.css" rel="stylesheet" type="text/css">
         <style type="text/css">
-.container {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
 
-        h4 {
-          margin-top: 25px;
-        }
+            h4 {
+                margin-top: 25px;
+            }
 
-        .row {
-          margin-bottom: 20px;
-        }
+            .row {
+                margin-bottom: 20px;
+            }
 
-        .row .row {
-          margin-top: 10px;
-          margin-bottom: 0;
-        }
+            .row .row {
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
 
-        [class*="col-"] {
-          padding-top: 15px;
-          padding-bottom: 15px;
-          background-color: rgba(185,74,72,.15);
-          border: 1px solid rgba(185,74,72,.2);
-        }
+            [class*="col-"] {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                background-color: rgba(185,74,72,.15);
+                border: 1px solid rgba(185,74,72,.2);
+            }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="main">
             <h2>yolo grids</h2>
-            <p>for test</p>
+            <p id="test">for test</p>
             
-            <h4>Three equal columns</h4>
+            <h3>Three equal columns</h3>
             <div class="row">
                 <div class="col-4">.col-4</div>
                 <div class="col-4">.col-4</div>
                 <div class="col-4">.col-4</div>
             </div>
             
-            <h4>Three unequal columns</h4>
+            <h3>Three unequal columns</h3>
             <div class="row">
                 <div class="col-3">.col-3</div>
                 <div class="col-6">.col-6</div>
                 <div class="col-3">.col-3</div>
             </div>
             
-            <h4>Two columns</h4>
+            <h3>Two columns</h3>
             <div class="row">
                 <div class="col-8">.col-8</div>
                 <div class="col-4">.col-4</div>
@@ -62,7 +63,7 @@
             <h4>Full width, single column</h4>
             <p>No grid classes are necessary for full-width elements.</p>
             
-            <h4>Offsetting columns</h4>
+            <h3>Offsetting columns</h3>
             <div class="row">
                 <div class="col-4">.col-4</div>
                 <div class="col-4 col-offset-4">.col-4 .col-offset-4</div>
@@ -75,8 +76,9 @@
                 <div class="col-6 col-offset-3">.col-6 .col-offset-3</div>
             </div>
             
-            <h4>Nesting columns</h4>
-            <p>Fix layout not support right now.</p>
+            <h3>Nesting columns</h3>
+            <p>Fix layout not supported.</p>
+            <p>Fluid layout example:</p>
             <div class="row">
                 <div class="col-9">Level 1: .col-9
                     <div class="row">
@@ -85,12 +87,127 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-8">Level 1: .col-8
+                    <div class="row">
+                        <div class="col-4">Level 2: .col-4</div>
+                        <div class="col-4">Level 2: .col-4</div>
+                        <div class="col-4">Level 2: .col-4</div>
+                    </div>
+                </div>
+            </div>
 
-            <h4>Column ordering</h4>
+            <h3>Column ordering</h3>
             <p></p>
             <div class="row">
                 <div class="col-8 col-push-4">.col-8 .col-push-4</div>
                 <div class="col-4 col-pull-8">.col-4 .col-pull-8</div>
+            </div>
+            
+            <h3>Samples</h3>
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-11"></div>
+                
+                <div class="col-2"></div>
+                <div class="col-10"></div>
+                
+                <div class="col-3"></div>
+                <div class="col-9"></div>
+                
+                <div class="col-4"></div>
+                <div class="col-8"></div>
+                
+                <div class="col-5"></div>
+                <div class="col-7"></div>
+                
+                <div class="col-6"></div>
+                <div class="col-6"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-1 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-2 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-3 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-4 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-5 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-6 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-7 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-8 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-9 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-10 col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-offset-11 col-1"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-push-11 col-1"></div>
+                <div class="col-pull-1 col-11"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-10 col-2"></div>
+                <div class="col-pull-2 col-10"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-9 col-3"></div>
+                <div class="col-pull-3 col-9"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-8 col-4"></div>
+                <div class="col-pull-4 col-8"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-7 col-5"></div>
+                <div class="col-pull-5 col-7"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-6 col-6">Before</div>
+                <div class="col-pull-6 col-6">After</div>
+            </div>
+            <div class="row">
+                <div class="col-push-5 col-7"></div>
+                <div class="col-pull-7 col-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-4 col-8"></div>
+                <div class="col-pull-8 col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-3 col-9"></div>
+                <div class="col-pull-9 col-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-2 col-10"></div>
+                <div class="col-pull-10 col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-1 col-11"></div>
+                <div class="col-pull-11 col-1"></div>
             </div>
         </div><!-- /container -->
     </body>
