@@ -83,7 +83,7 @@ figcaption {
   clear: both;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   position: relative;
   box-sizing: border-box;
   float: left;
@@ -134,6 +134,10 @@ figcaption {
 
 .col-11 {
   width: 990px;
+}
+
+.col-12 {
+  width: 1080px;
 }
 
 .col-push-1 {
@@ -254,6 +258,18 @@ figcaption {
 
 .col-offset-10 {
   margin-left: 900px;
+}
+
+.col-push-11 {
+  left: 990px;
+}
+
+.col-pull-11 {
+  right: 990px;
+}
+
+.col-offset-11 {
+  margin-left: 990px;
 }
 
 body {

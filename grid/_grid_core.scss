@@ -55,19 +55,19 @@ $DD: false;
         padding-right: ($YLGridSystemGutterWidth / 2);
     }
 
-    @for $i from 1 to $YLGridSystemColumnCount {
+    @for $i from 1 to $YLGridSystemColumnCount+1 {
         .col-#{$i} {
             @extend %YLGrideSystemColumnLayout;
         }
     }
 
-    @for $i from 1 to $YLGridSystemColumnCount {
+    @for $i from 1 to $YLGridSystemColumnCount+1 {
         .col-#{$i} {
             width: $YLGridSystemColumnWidth * $i;
         }
     }
 
-    @for $i from 1 to $YLGridSystemColumnCount - 1 {
+    @for $i from 1 to $YLGridSystemColumnCount {
         // Push and pull columns
         .col-push-#{$i} {
             left: $YLGridSystemColumnWidth * $i;

@@ -14,9 +14,21 @@ $YLEnableResponsiveTextAdjust: false;
 // Grid system
 // auto, 1080px or 960px
 $YLGridSystemWidth: 1080px;
-
 $YLGridSystemColNumber: 12;
-
 $YLGridSystemGutterWidth: 20px;
 
+// Example
+// fluid grid system
+// $YLGridSystemWidth: auto;
+// $YLGridSystemColNumber: 12;
+// $YLGridSystemGutterWidth: 0;
 
+// 1080px 18 colomns grid system
+// $YLGridSystemWidth: 1080px;
+// $YLGridSystemColNumber: 18;
+// $YLGridSystemGutterWidth: 20px;
+
+// 960px 12 colomns grid system
+// $YLGridSystemWidth: 960px;
+// $YLGridSystemColNumber: 12;
+// $YLGridSystemGutterWidth: 20px;
