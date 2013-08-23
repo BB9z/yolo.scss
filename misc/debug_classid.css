@@ -1,0 +1,27 @@
+/*
+    yolo.scss Debug tool
+    Display CLASS and ID names for elements.
+    https://github.com/BB9z/yolo.scss
+*/
+[id]::before,
+[class]::before,
+[class][id]::before {
+  position: absolute !important;
+  color: #FFF !important;
+  opacity: .9;
+}
+
+[id]::before {
+  content: "#" attr(id) !important;
+  background: rgba(89, 73, 18, 0.5) !important;
+}
+
+[class]::before {
+  content: "." attr(class) !important;
+  background: rgba(15, 40, 71, 0.5) !important;
+}
+
+[class][id]::before {
+  content: "#" attr(class) "." attr(id) !important;
+  background: rgba(18, 73, 17, 0.5) !important;
+}
