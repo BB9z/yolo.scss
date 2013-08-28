@@ -298,28 +298,29 @@ textarea {
 a {
   text-decoration: none;
   background: transparent;
-  color: #0088ff;
-}
-a:visited {
-  color: #275186;
+  color: #0077ff;
 }
 a:focus {
   outline: thin dotted;
 }
 a:hover {
   color: #33aaff;
-  text-decoration: underline;
   outline: 0;
 }
 a:active {
   color: #66ccff;
   outline: 0;
 }
-.no_link_status a:visited {
-  color: #0088ff;
+
+.yolo a:visited {
+  color: #275186;
 }
-.no_link_status a:hover {
-  text-decoration: none;
+.yolo a:hover {
+  color: #33aaff;
+  text-decoration: underline;
+}
+.yolo a:active {
+  color: #66ccff;
 }
 
 ul, ol {

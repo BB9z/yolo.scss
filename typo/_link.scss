@@ -1,10 +1,10 @@
-$YLLinkColorNormal  : #08F !default;
+$YLLinkColorNormal  : #07F !default;
 $YLLinkColorHover   : #3AF !default;
 $YLLinkColorActive  : #6CF !default;
 $YLLinkColorVisited : #275186 !default;
 
 a {
-    // 默认不显示下划线，hover 状态才显示，保持页面简洁，
+    // Remove underline by default.
     text-decoration: none;
     
     // Remove the gray background color from active links in IE 10.
@@ -13,7 +13,6 @@ a {
     color: $YLLinkColorNormal;
     
     &:visited {
-        color: $YLLinkColorVisited;
     }
     
     // Address `outline` inconsistency between Chrome and other browsers.
@@ -23,7 +22,6 @@ a {
     
     &:hover {
         color: $YLLinkColorHover;
-        text-decoration: underline;
         outline: 0;
     }
     
@@ -32,16 +30,19 @@ a {
         color: $YLLinkColorActive;
         outline: 0;
     }
+}
+
+.yolo a {
+    &:visited {
+        color: $YLLinkColorVisited;
+    }
     
-    // 区域内的链接没有过多状态，典型场景如：导航
-    .no_link_status & {
-        
-        &:visited {
-            color: $YLLinkColorNormal;
-        }
-        
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+        color: $YLLinkColorHover;
+        text-decoration: underline;
+    }
+    
+    &:active {
+        color: $YLLinkColorActive;
     }
 }
