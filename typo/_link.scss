@@ -30,6 +30,10 @@ a {
         color: $YLLinkColorActive;
         outline: 0;
     }
+    
+    .inherit-link & {
+        color: inherit;
+    }
 }
 
 .yolo a {

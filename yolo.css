@@ -324,6 +324,9 @@ a:active {
   color: #66ccff;
   outline: 0;
 }
+.inherit-link a {
+  color: inherit;
+}
 
 .yolo a:visited {
   color: #275186;
