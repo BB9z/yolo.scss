@@ -1,13 +1,13 @@
 
 // Font
-$YLFontFamilyNormal: Hiragino Sans GB, WenQuanYi Micro Hei, Helvetica, Lucida, Verdana, sans-serif;
-$YLFontFamilyMono: "XHei Mono", "Courier New", Courier, monospace;
-$YLFontSizeDefault: 16px;
+$YLFontFamilyNormal: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", Helvetica, Lucida, Verdana, sans-serif;
+$YLFontFamilyMono: "XHei Mono", "WenQuanYi Micro Hei Mono", "Courier New", Courier, monospace;
+$YLFontSizeDefault: 100%;
 
 // Disable text adjust on iOS, Android, WP.
-$YLTextSizeAdjustDiabled: true;
+$YLTextSizeAdjustDiabled: false;
 
-$YLEnableResponsiveTextAdjust: false;
+$YLEnableResponsiveTextAdjust: true;
 
 
 // Link color

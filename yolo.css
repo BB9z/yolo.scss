@@ -273,26 +273,39 @@ figcaption {
 }
 
 body {
-  font-family: Hiragino Sans GB, WenQuanYi Micro Hei, Helvetica, Lucida, Verdana, sans-serif;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", Helvetica, Lucida, Verdana, sans-serif;
   font-weight: 400;
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 100%;
 }
-
-body,
-div,
-p,
-a,
-li,
-td,
-small {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 112.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 125%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 137.5%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 150%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  body {
+    font-size: 162.5%;
+  }
 }
 
 textarea {
-  font-family: "XHei Mono", "Courier New", Courier, monospace;
+  font-family: "XHei Mono", "WenQuanYi Micro Hei Mono", "Courier New", Courier, monospace;
 }
 
 a {
@@ -422,7 +435,7 @@ blockquote blockquote {
 }
 
 kbd, samp {
-  font-family: "XHei Mono", "Courier New", Courier, monospace;
+  font-family: "XHei Mono", "WenQuanYi Micro Hei Mono", "Courier New", Courier, monospace;
   font-size: 1em;
 }
 
@@ -431,7 +444,7 @@ pre, code {
   word-wrap: break-word;
   line-height: 1.2;
   font-size: .8em;
-  font-family: "XHei Mono", "Courier New", Courier, monospace;
+  font-family: "XHei Mono", "WenQuanYi Micro Hei Mono", "Courier New", Courier, monospace;
 }
 
 pre {
