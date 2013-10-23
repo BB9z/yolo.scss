@@ -19,9 +19,9 @@ $YLLinkColorVisited : #275186;
 
 // Grid system
 // auto, 1080px or 960px
-$YLGridSystemWidth: 1080px;
+$YLGridSystemWidth: auto;
 $YLGridSystemColNumber: 12;
-$YLGridSystemGutterWidth: 20px;
+$YLGridSystemGutterWidth: 0;
 
 // Example
 // fluid grid system
@@ -41,4 +41,4 @@ $YLGridSystemGutterWidth: 20px;
 
 
 // Enable debug outputs when compiling.
-$YLDebugMode: true;
+$YLDebugMode: false;
