@@ -322,7 +322,7 @@ a:active {
   color: #66ccff;
   outline: 0;
 }
-.inherit-link a {
+.inherit-link a, a.inherit-link {
   color: inherit;
 }
 
