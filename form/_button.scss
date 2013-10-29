@@ -1,0 +1,35 @@
+$YLButtonTitleColorNormal       : #FFF !default;
+$YLButtonTitleColorHover        : $YLButtonTitleColorNormal !default;
+$YLButtonTitleColorActive       : $YLButtonTitleColorNormal !default;
+$YLButtonTitleColorDisabled     : #DDD !default;
+
+$YLButtonBackgroundColorNormal  : $YLLinkColorNormal !default;
+$YLButtonBackgroundColorHover   : $YLLinkColorHover !default;
+$YLButtonBackgroundColorActive  : $YLLinkColorActive !default;
+$YLButtonBackgroundColorDisabled: #888 !default;
+
+a.button {
+    display: inline-block;
+    padding: .2em 1em;
+    border-radius: 2px;
+    text-align: center;
+    color: $YLButtonTitleColorNormal;
+    background-color: $YLButtonBackgroundColorNormal;
+    
+    &:hover {
+        color: $YLButtonTitleColorHover;
+        background-color: $YLButtonBackgroundColorHover;
+        text-decoration: none;
+    }
+    
+    &:active {
+        color: $YLButtonTitleColorActive;
+        background-color: $YLButtonBackgroundColorActive;
+    }
+    
+    &.disabled {
+        color: $YLButtonTitleColorDisabled;
+        background-color: $YLButtonBackgroundColorDisabled;
+        cursor: not-allowed;
+    }
+}
