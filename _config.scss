@@ -1,46 +1,46 @@
 
 // Font
-$YLFontFamilyNormal: "Hiragino Sans GB", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "Microsoft YaHei", Helvetica, Lucida, Verdana, sans-serif;
-$YLFontFamilyMono: "XHei Mono", "WenQuanYi Micro Hei Mono", "Courier New", Courier, monospace;
-$YLFontSizeDefault: 100%;
+$YLFontFamilyNormal: "Hiragino Sans GB", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "Microsoft YaHei", Helvetica, Lucida, Verdana, sans-serif !default;
+$YLFontFamilyMono: "XHei Mono", "WenQuanYi Micro Hei Mono", "Courier New", Courier, monospace !default;
+$YLFontSizeDefault: 100% !default;
 
 // Disable text adjust on iOS, Android, WP.
-$YLTextSizeAdjustDiabled: false;
+$YLTextSizeAdjustDiabled: false !default;
 
-$YLEnableResponsiveTextAdjust: true;
+$YLEnableResponsiveTextAdjust: true !default;
 
 
 // Link color
-$YLLinkColorNormal  : #07F;
-$YLLinkColorHover   : #3AF;
-$YLLinkColorActive  : #6CF;
-$YLLinkColorVisited : #275186;
+$YLLinkColorNormal  : #07F !default;
+$YLLinkColorHover   : #3AF !default;
+$YLLinkColorActive  : #6CF !default;
+$YLLinkColorVisited : #275186 !default;
 
 
 // Grid system
-$YLEnableGridSystem: false;
+$YLEnableGridSystem: false !default;
 
 // auto, 1080px, 960px or any other
-$YLGridSystemWidth: auto;
-$YLGridSystemColNumber: 12;
-$YLGridSystemGutterWidth: 0;
+$YLGridSystemWidth: auto !default;
+$YLGridSystemColNumber: 12 !default;
+$YLGridSystemGutterWidth: 0 !default;
 
 // Example
 // fluid grid system
-// $YLGridSystemWidth: auto;
-// $YLGridSystemColNumber: 12;
-// $YLGridSystemGutterWidth: 0;
+// $YLGridSystemWidth: auto !default;
+// $YLGridSystemColNumber: 12 !default;
+// $YLGridSystemGutterWidth: 0 !default;
 
 // 1080px 18 colomns grid system
-// $YLGridSystemWidth: 1080px;
-// $YLGridSystemColNumber: 18;
-// $YLGridSystemGutterWidth: 20px;
+// $YLGridSystemWidth: 1080px !default;
+// $YLGridSystemColNumber: 18 !default;
+// $YLGridSystemGutterWidth: 20px !default;
 
 // 960px 12 colomns grid system
-// $YLGridSystemWidth: 960px;
-// $YLGridSystemColNumber: 12;
-// $YLGridSystemGutterWidth: 20px;
+// $YLGridSystemWidth: 960px !default;
+// $YLGridSystemColNumber: 12 !default;
+// $YLGridSystemGutterWidth: 20px !default;
 
 
 // Enable debug outputs when compiling.
-$YLDebugMode: false;
+$YLDebugMode: false !default;
