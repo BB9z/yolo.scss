@@ -18,7 +18,9 @@ $YLLinkColorVisited : #275186;
 
 
 // Grid system
-// auto, 1080px or 960px
+$YLEnableGridSystem: false;
+
+// auto, 1080px, 960px or any other
 $YLGridSystemWidth: auto;
 $YLGridSystemColNumber: 12;
 $YLGridSystemGutterWidth: 0;
